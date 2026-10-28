@@ -17,7 +17,7 @@ async function globalSetup(config: FullConfig) {
     {
       headers: {
         "X-ACCESS-KEY":
-          "$2b$10$c1bjs8RhM6QHo4qLpsmdSe3vEM7KFrkpeqXfL1YCwUTtzW4P5N7zS",
+          process.env.JSONBIN_ACCESS_KEY ?? "",
       },
       timeout: 3000,
     }
